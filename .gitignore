@@ -170,6 +170,7 @@ temp/
 *secret*.*
 *KEYS*.*
 *keys*.*
+ormconfig.json
 
 # Sass
 .sass-cache/
