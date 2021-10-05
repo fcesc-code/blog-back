@@ -4,6 +4,7 @@ import { ExtractJwt, Strategy } from 'passport-jwt';
 import { UserDto } from 'src/users/user.dto';
 import { UsersService } from 'src/users/users.service';
 import { JWTPayload } from './auth.service';
+import SECRET_KEY from './SECRET_KEY';
 
 @Injectable()
 export class JwtStrategy extends PassportStrategy(Strategy) {
@@ -11,7 +12,7 @@ export class JwtStrategy extends PassportStrategy(Strategy) {
     super({
       jwtFromRequest: ExtractJwt.fromAuthHeaderAsBearerToken(),
       ignoreExpiration: false,
-      secretOrKey: 'uoc',
+      secretOrKey: SECRET_KEY,
     });
   }
 

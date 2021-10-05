@@ -17,7 +17,7 @@ export default class TypeOrmConfig {
       url: API_KEYS.url,
       name: API_KEYS.name,
       entities: API_KEYS.entities,
-      synchronize: true,
+      synchronize: false,
       logging: true,
     };
   }
