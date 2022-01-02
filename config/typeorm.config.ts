@@ -3,17 +3,17 @@ import {
   TypeOrmModuleAsyncOptions,
   TypeOrmModuleOptions,
 } from '@nestjs/typeorm';
-import { API_KEYS } from './API_KEYS';
+import { API_CONFIG } from './API_CONFIG';
 
 export default class TypeOrmConfig {
   static getOrmConfig(configService: ConfigService): TypeOrmModuleOptions {
     return {
-      type: 'postgres',
-      url: API_KEYS.url,
-      name: API_KEYS.name,
-      entities: API_KEYS.entities,
-      synchronize: API_KEYS.synchronize,
-      logging: API_KEYS.logging,
+      type: API_CONFIG.type,
+      url: API_CONFIG.url,
+      name: API_CONFIG.name,
+      entities: API_CONFIG.entities,
+      synchronize: API_CONFIG.synchronize,
+      logging: API_CONFIG.logging,
     };
   }
 }

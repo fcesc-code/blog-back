@@ -5,14 +5,13 @@ import { UsersModule } from './../users/users.module';
 import { AuthController } from './auth.controller';
 import { AuthService } from './auth.service';
 import { JwtStrategy } from './jwt.strategy';
-import SECRET_KEY from './SECRET_KEY';
 
 @Module({
   imports: [
     PassportModule,
     UsersModule,
     JwtModule.register({
-      secret: SECRET_KEY,
+      secret: process.env.SECRET_KEY,
     }),
   ],
   providers: [AuthService, JwtStrategy],
