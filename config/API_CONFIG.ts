@@ -1,3 +1,5 @@
+import API_URL from './API_SECRET_KEYS';
+
 interface apiConfig {
   type:
     | 'mysql'
@@ -29,7 +31,7 @@ interface apiConfig {
 
 const API_CONFIG: apiConfig = {
   type: 'postgres',
-  url: process.env.API_URL,
+  url: API_URL,
   name: 'default',
   entities: ['dist/**/*.entity{.ts,.js}'],
   synchronize: false,
