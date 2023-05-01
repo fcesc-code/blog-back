@@ -31,7 +31,7 @@
     "@nestjs/passport": "^8.0.1",
     "@nestjs/platform-express": "^8.0.0",
     "@nestjs/swagger": "^5.0.9",
-    "@nestjs/typeorm": "^8.0.2",
+    "@nestjs/typeorm": "^8.1.4",
     "bcrypt": "^5.0.1",
     "passport": "^0.4.1",
     "passport-jwt": "^4.0.1",
@@ -40,7 +40,7 @@
     "rimraf": "^3.0.2",
     "rxjs": "^7.2.0",
     "swagger-ui-express": "^4.1.6",
-    "typeorm": "^0.2.37",
+    "typeorm": "^0.3.15",
     "uuid": "^8.3.2"
   },
   "devDependencies": {
